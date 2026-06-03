@@ -3,23 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NovaMarket - Digital Store</title>
+<title>NovaMarket - Boutique IA Premium</title>
 
 <style>
 body{
 margin:0;
-font-family:Inter, Arial;
-background:#0A0F1C;
+font-family:Arial;
+background:#0B0F1A;
 color:white;
-}
-
-/* TOP BAR */
-.topbar{
-background:#0F172A;
-padding:10px;
-text-align:center;
-font-size:12px;
-color:#aaa;
 }
 
 /* NAV */
@@ -27,7 +18,7 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 30px;
+padding:18px 25px;
 background:#111827;
 position:sticky;
 top:0;
@@ -36,74 +27,64 @@ z-index:10;
 
 .logo{
 font-size:22px;
-font-weight:800;
+font-weight:bold;
 color:#00C8FF;
 }
 
-.menu a{
+nav a{
 color:white;
-margin:0 10px;
 text-decoration:none;
-font-size:14px;
+margin:0 10px;
 opacity:0.8;
 }
 
-.menu a:hover{
-opacity:1;
+nav a:hover{opacity:1;}
+
+.cartBtn{
+background:#00E676;
+border:none;
+padding:8px 12px;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
 }
 
 /* HERO */
 .hero{
-padding:120px 20px;
 text-align:center;
-background:radial-gradient(circle at top,#111827,#0A0F1C);
+padding:110px 20px;
+background:linear-gradient(135deg,#111827,#0B0F1A);
 }
 
 .hero h1{
-font-size:54px;
-margin:0;
+font-size:52px;
 }
 
 .hero p{
-color:#9CA3AF;
+color:#aaa;
 max-width:650px;
-margin:20px auto;
-font-size:16px;
+margin:auto;
 }
 
-.cta{
-margin-top:20px;
+.btn{
 display:inline-block;
+padding:12px 18px;
 background:#00E676;
 color:black;
-padding:14px 26px;
-border-radius:12px;
+border-radius:10px;
 font-weight:bold;
 text-decoration:none;
+cursor:pointer;
+margin-top:10px;
 }
 
-/* STATS */
-.stats{
-display:flex;
-justify-content:center;
-gap:30px;
-padding:30px;
-background:#0F172A;
-flex-wrap:wrap;
-}
-
-.stat{
-background:#111827;
-padding:15px 20px;
-border-radius:10px;
-}
-
-/* PRODUCTS */
-.products{
+/* SECTIONS */
+section{
 padding:60px 20px;
 text-align:center;
 }
 
+/* PRODUCTS */
 .grid{
 display:flex;
 flex-wrap:wrap;
@@ -113,10 +94,10 @@ margin-top:30px;
 }
 
 .card{
-width:270px;
+width:260px;
 background:#111827;
 padding:20px;
-border-radius:16px;
+border-radius:15px;
 transition:0.3s;
 border:1px solid #1F2937;
 }
@@ -132,44 +113,25 @@ font-weight:bold;
 font-size:18px;
 }
 
-.badge{
-background:#00C8FF;
-color:black;
-padding:4px 8px;
-font-size:12px;
-border-radius:6px;
-display:inline-block;
-margin-bottom:10px;
-}
-
-/* SOCIAL PROOF */
-.reviews{
-padding:60px 20px;
-text-align:center;
+/* FEATURES */
+.features{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
 background:#0F172A;
 }
 
-.review{
-margin:10px auto;
-max-width:500px;
-color:#ccc;
+.feature{
+background:#111827;
+padding:15px;
+border-radius:10px;
+width:200px;
 }
 
 /* FAQ */
 .faq{
-padding:60px 20px;
-}
-
-.faq h2{
-text-align:center;
-}
-
-.item{
-max-width:700px;
-margin:10px auto;
-background:#111827;
-padding:15px;
-border-radius:10px;
+background:#0F172A;
 }
 
 /* CART */
@@ -177,107 +139,110 @@ border-radius:10px;
 position:fixed;
 right:20px;
 top:80px;
+width:260px;
 background:#111827;
 padding:15px;
 border-radius:12px;
-width:260px;
 display:none;
 border:1px solid #1F2937;
 }
 
 /* FOOTER */
 footer{
+padding:25px;
 text-align:center;
-padding:30px;
 color:#777;
-background:#0A0F1C;
+background:#0B0F1A;
 }
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-⚡ Livraison instantanée • 🔒 Paiement sécurisé • ♾️ Accès à vie
-</div>
-
+<!-- NAV -->
 <nav>
 <div class="logo">NovaMarket</div>
-<div class="menu">
+
+<div>
 <a href="#shop">Boutique</a>
-<a href="#reviews">Avis</a>
 <a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
 </div>
-<button onclick="toggleCart()" style="background:#00E676;border:none;padding:8px 12px;border-radius:8px;">
-🛒 Panier (<span id="count">0</span>)
+
+<button class="cartBtn" onclick="toggleCart()">
+🛒 (<span id="count">0</span>)
 </button>
 </nav>
 
-<section class="hero">
-<h1>La boutique digitale #1 pour créateurs</h1>
-<p>Produits IA, templates, scripts et outils pour lancer et scaler ton business en ligne rapidement.</p>
-<a class="cta" href="#shop">Accéder à la boutique</a>
+<!-- HERO -->
+<div class="hero">
+<h1>🚀 Boutique IA Premium</h1>
+<p>Les meilleurs produits digitaux pour créer du contenu, gagner du temps et développer ton business.</p>
+<a class="btn" href="#shop">Voir la boutique</a>
+</div>
+
+<!-- FEATURES -->
+<section class="features">
+<div class="feature">⚡ Livraison instantanée</div>
+<div class="feature">🔒 Paiement sécurisé</div>
+<div class="feature">♾️ Accès à vie</div>
+<div class="feature">📦 Produits IA premium</div>
 </section>
 
-<section class="stats">
-<div class="stat">⭐ 1 200+ clients</div>
-<div class="stat">📦 15 produits</div>
-<div class="stat">⚡ Livraison instant</div>
-<div class="stat">💳 Paiement sécurisé</div>
-</section>
-
-<section class="products" id="shop">
+<!-- PRODUCTS -->
+<section id="shop">
 <h2>🔥 Produits populaires</h2>
 
 <div class="grid">
 
 <div class="card">
-<div class="badge">BEST</div>
-<h3>Pack 500 Prompts IA</h3>
+<h3>Prompts ChatGPT</h3>
 <p class="price">14,99€</p>
-<p>Boost ton business avec l’IA</p>
-<button onclick="add('Prompts IA',14.99)">Ajouter</button>
+<button class="btn" onclick="add('Prompts IA',14.99)">Ajouter</button>
+<a class="btn" href="TON-LIEN-STRIPE" target="_blank">Acheter</a>
 </div>
 
 <div class="card">
-<div class="badge">HOT</div>
 <h3>Kit TikTok Viral</h3>
 <p class="price">24,99€</p>
-<p>Deviens viral rapidement</p>
-<button onclick="add('TikTok Kit',24.99)">Ajouter</button>
+<button class="btn" onclick="add('TikTok Kit',24.99)">Ajouter</button>
+<a class="btn" href="TON-LIEN-STRIPE" target="_blank">Acheter</a>
 </div>
 
 <div class="card">
-<h3>Canva Pro Pack</h3>
+<h3>Pack Canva</h3>
 <p class="price">19,99€</p>
-<p>Templates pro réseaux sociaux</p>
-<button onclick="add('Canva',19.99)">Ajouter</button>
+<button class="btn" onclick="add('Canva Pack',19.99)">Ajouter</button>
+<a class="btn" href="TON-LIEN-STRIPE" target="_blank">Acheter</a>
 </div>
 
 </div>
 </section>
 
-<section class="reviews" id="reviews">
-<h2>Avis clients</h2>
-<div class="review">“J’ai commencé à vendre grâce à ce site” ⭐⭐⭐⭐⭐</div>
-<div class="review">“Très pro et rapide” ⭐⭐⭐⭐⭐</div>
-<div class="review">“Meilleur pack IA” ⭐⭐⭐⭐⭐</div>
+<!-- FAQ -->
+<section id="faq">
+<h2>❓ FAQ</h2>
+
+<p><b>Comment je reçois mes produits ?</b><br>Instantanément après paiement.</p>
+<p><b>Est-ce physique ?</b><br>Non, produits digitaux.</p>
+<p><b>Accès ?</b><br>À vie.</p>
 </section>
 
-<section class="faq" id="faq">
-<h2>FAQ</h2>
-<div class="item">💡 Livraison instantanée après achat</div>
-<div class="item">💡 Produits numériques uniquement</div>
-<div class="item">💡 Accès à vie garanti</div>
+<!-- CONTACT -->
+<section id="contact">
+<h2>📞 Contact</h2>
+<p>Support : contact@novamarket.com</p>
 </section>
 
+<!-- CART -->
 <div class="cart" id="cart">
-<h3>Panier</h3>
+<h3>🛒 Panier</h3>
 <div id="items"></div>
 <p>Total: <span id="total">0</span>€</p>
-<button onclick="alert('Stripe à connecter 💳')">Checkout</button>
+<button class="btn">Checkout (Stripe)</button>
 </div>
 
+<!-- FOOTER -->
 <footer>
 NovaMarket • Boutique digitale premium
 </footer>
@@ -292,14 +257,16 @@ render();
 }
 
 function render(){
-let t=0;
 let html="";
+let total=0;
+
 cart.forEach(i=>{
-html+="<p>"+i.name+" "+i.price+"€</p>";
-t+=i.price;
+html+=`<p>${i.name} - ${i.price}€</p>`;
+total+=i.price;
 });
+
 document.getElementById("items").innerHTML=html;
-document.getElementById("total").innerText=t.toFixed(2);
+document.getElementById("total").innerText=total.toFixed(2);
 }
 
 function toggleCart(){
