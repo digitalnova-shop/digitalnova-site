@@ -13,7 +13,7 @@ body {
   color:white;
 }
 
-/* NAVBAR */
+/* HEADER */
 header {
   display:flex;
   justify-content:space-between;
@@ -34,29 +34,36 @@ nav a {
   margin:0 10px;
   color:white;
   text-decoration:none;
+  font-size:14px;
+}
+
+.search {
+  padding:5px;
+  border-radius:6px;
+  border:none;
 }
 
 /* HERO */
 .hero {
   text-align:center;
-  padding:100px 20px;
-  background: linear-gradient(135deg,#111827,#0B0F1A);
+  padding:120px 20px;
+  background:linear-gradient(135deg,#111827,#0B0F1A);
 }
 
 .hero h1 {
-  font-size:48px;
+  font-size:52px;
 }
 
 .hero p {
-  color:#aaa;
   max-width:700px;
   margin:auto;
+  color:#aaa;
 }
 
 .btn {
   display:inline-block;
   margin-top:20px;
-  padding:14px 24px;
+  padding:14px 26px;
   background:#00E676;
   color:black;
   font-weight:bold;
@@ -72,17 +79,23 @@ nav a {
 /* STATS */
 .stats {
   display:flex;
-  justify-content:center;
   flex-wrap:wrap;
+  justify-content:center;
   gap:30px;
   padding:40px;
   background:#0F172A;
 }
 
+/* SECTIONS TITLES */
+.section-title {
+  text-align:center;
+  font-size:30px;
+  margin-top:50px;
+}
+
 /* PRODUCTS */
 .products {
-  padding:60px 20px;
-  text-align:center;
+  padding:40px;
 }
 
 .grid {
@@ -90,11 +103,10 @@ nav a {
   flex-wrap:wrap;
   justify-content:center;
   gap:20px;
-  margin-top:30px;
 }
 
 .card {
-  width:280px;
+  width:260px;
   background:#111827;
   padding:20px;
   border-radius:15px;
@@ -107,41 +119,74 @@ nav a {
 
 .price {
   color:#00E676;
-  font-size:20px;
+  font-size:18px;
   font-weight:bold;
 }
 
-/* BADGES */
 .badge {
-  font-size:12px;
   background:#00E676;
   color:black;
-  padding:5px 10px;
+  padding:4px 10px;
   border-radius:8px;
+  font-size:12px;
+}
+
+/* OFFERS */
+.offers {
+  text-align:center;
+  padding:60px;
+  background:#0F172A;
+}
+
+/* FEATURES */
+.features {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  padding:40px;
+}
+
+.feature {
+  background:#111827;
+  padding:20px;
+  border-radius:10px;
+  width:200px;
+  text-align:center;
 }
 
 /* FAQ */
 .faq {
-  padding:60px 20px;
+  padding:50px;
   background:#0F172A;
-}
-
-.faq h2 {
-  text-align:center;
 }
 
 /* REVIEWS */
 .reviews {
-  padding:60px 20px;
+  padding:50px;
   text-align:center;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  text-align:center;
+  padding:60px;
+  background:#111827;
+}
+
+input {
+  padding:10px;
+  border-radius:6px;
+  border:none;
+  width:200px;
 }
 
 /* FOOTER */
 footer {
-  padding:30px;
   text-align:center;
-  background:#111827;
-  color:#888;
+  padding:30px;
+  background:#0B0F1A;
+  color:#777;
 }
 </style>
 
@@ -154,31 +199,32 @@ footer {
   <nav>
     <a href="#">Accueil</a>
     <a href="#products">Produits</a>
+    <a href="#offers">Offres</a>
     <a href="#faq">FAQ</a>
     <a href="#reviews">Avis</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1>🚀 DigitalNova Boutique</h1>
-  <p>La meilleure boutique de produits digitaux pour booster ton business, tes réseaux sociaux et ton intelligence artificielle.</p>
-  <a class="btn" href="#products">Voir la boutique</a>
+  <h1>🚀 DigitalNova Store</h1>
+  <p>La boutique ultime de produits digitaux pour créer, apprendre et gagner du temps avec l’IA et le marketing.</p>
+  <a class="btn" href="#products">Découvrir</a>
 </section>
 
 <section class="stats">
-  <div>⭐ 1000+ clients</div>
+  <div>⭐ 1 000+ clients</div>
   <div>📦 10+ produits</div>
   <div>⚡ Livraison instantanée</div>
   <div>🔒 Paiement sécurisé</div>
 </section>
 
-<section class="products" id="products">
-  <h2>🛍 Produits Premium</h2>
+<h2 class="section-title">🔥 Produits populaires</h2>
 
+<section class="products" id="products">
   <div class="grid">
 
     <div class="card">
-      <div class="badge">Best Seller</div>
+      <div class="badge">BEST</div>
       <h3>Prompts ChatGPT</h3>
       <p class="price">14,99€</p>
       <p>500 prompts business & IA</p>
@@ -195,37 +241,56 @@ footer {
     <div class="card">
       <h3>Canva Pack</h3>
       <p class="price">19,99€</p>
-      <p>Templates pro réseaux sociaux</p>
+      <p>Templates réseaux sociaux</p>
       <a class="btn" href="TON-LIEN-STRIPE">Acheter</a>
     </div>
 
     <div class="card">
       <h3>Miniatures YouTube</h3>
       <p class="price">12,99€</p>
-      <p>50 templates pro YouTube</p>
+      <p>50 designs pro YouTube</p>
       <a class="btn" href="TON-LIEN-STRIPE">Acheter</a>
     </div>
 
   </div>
 </section>
 
+<section class="offers" id="offers">
+  <h2>🎁 Offre spéciale</h2>
+  <p>-50% sur le pack IA aujourd’hui seulement</p>
+  <a class="btn" href="#">Voir l’offre</a>
+</section>
+
+<section class="features">
+  <div class="feature">⚡ Instant download</div>
+  <div class="feature">🔒 Paiement sécurisé</div>
+  <div class="feature">♾️ Accès à vie</div>
+  <div class="feature">📩 Support rapide</div>
+</section>
+
 <section class="faq" id="faq">
-  <h2>❓ FAQ</h2>
-  <p>✔ Livraison instantanée après achat</p>
-  <p>✔ Produits numériques uniquement</p>
-  <p>✔ Accès à vie</p>
-  <p>✔ Paiement sécurisé</p>
+  <h2 class="section-title">❓ FAQ</h2>
+  <p><b>Comment je reçois mon produit ?</b> → Téléchargement immédiat après paiement.</p>
+  <p><b>Est-ce physique ?</b> → Non, digital uniquement.</p>
+  <p><b>Je peux re-télécharger ?</b> → Oui, à vie.</p>
 </section>
 
 <section class="reviews" id="reviews">
-  <h2>💬 Avis clients</h2>
+  <h2 class="section-title">💬 Avis clients</h2>
   <p>⭐⭐⭐⭐⭐ “Incroyable qualité” - Lucas</p>
   <p>⭐⭐⭐⭐⭐ “Très utile pour mon business” - Emma</p>
-  <p>⭐⭐⭐⭐⭐ “Meilleur site de produits digitaux” - Nathan</p>
+  <p>⭐⭐⭐⭐⭐ “Meilleur site digital” - Nathan</p>
+</section>
+
+<section class="newsletter">
+  <h2>📩 Newsletter</h2>
+  <p>Reçois des offres exclusives</p>
+  <input type="email" placeholder="Ton email">
+  <a class="btn" href="#">S’inscrire</a>
 </section>
 
 <footer>
-  DigitalNova • Boutique digitale premium • Tous droits réservés
+  DigitalNova • Boutique digitale • Tous droits réservés
 </footer>
 
 </body>
