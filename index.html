@@ -3,115 +3,145 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DigitalNova</title>
+<title>DigitalNova - Boutique Premium</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial;
-  background: #0D1117;
+  background: #0B0F1A;
   color: white;
 }
 
+/* HEADER */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  background: #111827;
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  background:#111827;
 }
 
 .logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #00C8FF;
+  font-size:22px;
+  font-weight:bold;
+  color:#00C8FF;
 }
 
+nav a {
+  margin:0 10px;
+  color:white;
+  text-decoration:none;
+}
+
+/* HERO */
 .hero {
-  text-align: center;
-  padding: 60px 20px;
+  text-align:center;
+  padding:90px 20px;
+  background: linear-gradient(135deg,#111827,#0B0F1A);
 }
 
 .hero h1 {
-  font-size: 28px;
+  font-size:40px;
+}
+
+.hero p {
+  color:#aaa;
+  max-width:600px;
+  margin:auto;
 }
 
 .btn {
-  display: inline-block;
-  padding: 12px 18px;
-  margin-top: 15px;
-  background: #00E676;
-  color: black;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 22px;
+  background:#00E676;
+  color:black;
+  font-weight:bold;
+  border-radius:10px;
+  text-decoration:none;
 }
 
+/* PRODUCTS */
 .products {
-  padding: 20px;
-  text-align: center;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:40px;
+  gap:20px;
 }
 
 .card {
-  background: #111827;
-  margin: 15px auto;
-  padding: 15px;
-  border-radius: 10px;
-  max-width: 320px;
+  background:#111827;
+  padding:20px;
+  border-radius:12px;
+  width:260px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:scale(1.05);
 }
 
 .price {
-  color: #00E676;
-  font-weight: bold;
+  color:#00E676;
+  font-size:18px;
+  font-weight:bold;
 }
 
+/* FOOTER */
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #111827;
-  color: gray;
-  margin-top: 30px;
+  text-align:center;
+  padding:20px;
+  background:#111827;
+  color:#888;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
   <div class="logo">DigitalNova</div>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#products">Produits</a>
+    <a href="#">FAQ</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <h1>Produits numériques premium</h1>
-  <p>Templates, IA, TikTok, YouTube, productivité</p>
-  <a class="btn" href="#products">Voir les produits</a>
+  <h1>🚀 Crée, Apprends, Réussis</h1>
+  <p>Les meilleurs produits digitaux pour booster ton business et tes réseaux sociaux.</p>
+  <a class="btn" href="#products">Découvrir la boutique</a>
 </section>
 
 <section class="products" id="products">
 
   <div class="card">
-    <h3>Pack Prompts ChatGPT</h3>
-    <p class="price">14,99 €</p>
+    <h3>🔥 Prompts ChatGPT</h3>
+    <p class="price">14,99€</p>
+    <p>500 prompts pour business & IA</p>
     <a class="btn" href="TON-LIEN-STRIPE">Acheter</a>
   </div>
 
   <div class="card">
-    <h3>Pack Canva Réseaux Sociaux</h3>
-    <p class="price">19,99 €</p>
+    <h3>📱 Kit TikTok</h3>
+    <p class="price">24,99€</p>
+    <p>Scripts + idées virales</p>
     <a class="btn" href="TON-LIEN-STRIPE">Acheter</a>
   </div>
 
   <div class="card">
-    <h3>Kit TikTok Viral</h3>
-    <p class="price">24,99 €</p>
+    <h3>🎨 Canva Pack</h3>
+    <p class="price">19,99€</p>
+    <p>Templates réseaux sociaux</p>
     <a class="btn" href="TON-LIEN-STRIPE">Acheter</a>
   </div>
 
 </section>
 
 <footer>
-  DigitalNova • Paiement sécurisé • Téléchargement instantané
+  DigitalNova • Boutique digitale premium • Paiement sécurisé
 </footer>
 
 </body>
