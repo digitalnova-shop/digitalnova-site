@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boutique - DigitalNova</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0D1117;
+color:white;
+}
+
+header{
+background:#111827;
+padding:20px;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00C8FF;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,#111827,#0D1117);
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero p{
+color:#cccccc;
+max-width:700px;
+margin:auto;
+}
+
+.products{
+max-width:1400px;
+margin:auto;
+padding:60px 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111827;
+border-radius:18px;
+padding:25px;
+transition:.3s;
+border:1px solid #1f2937;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,200,255,.15);
+border-color:#00C8FF;
+}
+
+.badge{
+display:inline-block;
+background:#00E676;
+color:black;
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.card p{
+color:#cccccc;
+line-height:1.5;
+}
+
+.price{
+font-size:28px;
+font-weight:bold;
+color:#00E676;
+margin-top:20px;
+}
+
+.old-price{
+text-decoration:line-through;
+color:#888;
+font-size:16px;
+margin-left:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 20px;
+background:#00E676;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:10px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.guarantees{
+background:#111827;
+padding:50px 20px;
+text-align:center;
+}
+
+.g-grid{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.g-item{
+background:#0D1117;
+padding:20px;
+border-radius:15px;
+width:250px;
+}
+
+footer{
+margin-top:80px;
+background:#111827;
+padding:40px;
+text-align:center;
+color:#aaa;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+.menu{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">DigitalNova</div>
+
+<div class="menu">
+<a href="index.html">Accueil</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+<a href="apropos.html">À propos</a>
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>🛍️ Boutique DigitalNova</h1>
+
+<p>
+Découvrez nos ressources numériques premium pour l'IA,
+la création de contenu, TikTok, YouTube et la productivité.
+</p>
+
+</section>
+
+<section class="products">
+
+<div class="card">
+<div class="badge">⭐ Best Seller</div>
+<h3>Pack 500 Prompts ChatGPT</h3>
+<p>500 prompts organisés pour le business, les études, les réseaux sociaux et la productivité.</p>
+<div class="price">14,99€ <span class="old-price">29,99€</span></div>
+<a href="#" class="btn">Acheter</a>
+</div>
+
+<div class="card">
+<div class="badge">🔥 Populaire</div>
+<h3>Pack Canva Réseaux Sociaux</h3>
+<p>100 modèles Canva modifiables pour TikTok, Instagram et YouTube.</p>
+<div class="price">19,99€</div>
+<a href="#" class="btn">Acheter</a>
+</div>
+
+<div class="card">
+<div class="badge">🚀 Viral</div>
+<h3>Kit Créateur TikTok</h3>
+<p>Scripts viraux, idées de vidéos et calendrier de publication.</p>
+<div class="price">24,99€</div>
+<a href="#" class="btn">Acheter</a>
+</div>
+
+<div class="card">
+<h3>Pack Miniatures YouTube</h3>
+<p>50 miniatures professionnelles modifiables pour augmenter le taux de clic.</p>
+<div class="price">12,99€</div>
+<a href="#" class="btn">Acheter</a>
+</div>
+
+<div class="card">
+<h3>E-book IA</h3>
+<p>Guide complet pour gagner de l'argent avec les outils d'intelligence artificielle.</p>
+<div class="price">9,99€</div>
+<a href="#" class="btn">Acheter</a>
+</div>
+
+<div class="card">
+<h3>Pack Presets Lightroom</h3>
+<p>30 presets professionnels pour améliorer instantanément vos photos.</p>
+<div class="price">14,99€</div>
+<a href="#" class="btn">Acheter</a>
+</div>
+
+<div class="card">
+<h3>Pack Effets CapCut</h3>
+<p>Transitions et effets prêts à utiliser pour vos montages vidéo.</p>
+<div class="price">19,99€</div>
+<a href="#" class="btn">Acheter</a>
+</div>
+
+<div class="card">
+<h3>Pack Icônes Premium</h3>
+<p>Plus de 2 000 icônes professionnelles haute qualité.</p>
+<div class="price">9,99€</div>
+<a href="#" class="btn">Acheter</a>
+</div>
+
+<div class="card">
+<h3>Pack CV Professionnels</h3>
+<p>20 modèles modernes compatibles Word et Canva.</p>
+<div class="price">11,99€</div>
+<a href="#" class="btn">Acheter</a>
+</div>
+
+<div class="card">
+<h3>Pack Productivité</h3>
+<p>Templates Notion et outils d'organisation pour travailler efficacement.</p>
+<div class="price">17,99€</div>
+<a href="#" class="btn">Acheter</a>
+</div>
+
+</section>
+
+<section class="guarantees">
+
+<h2>🛡️ Nos garanties</h2>
+
+<div class="g-grid">
+
+<div class="g-item">
+⚡ Téléchargement instantané
+</div>
+
+<div class="g-item">
+🔒 Paiement sécurisé
+</div>
+
+<div class="g-item">
+♾️ Accès à vie
+</div>
+
+<div class="g-item">
+📧 Support rapide
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+DigitalNova © 2026
+
+<br><br>
+
+Paiement sécurisé • Téléchargement instantané • Accès à vie
+
+</footer>
+
+</body>
+</html>
