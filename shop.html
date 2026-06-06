@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadShop();loadReviews()">
+
+<header>
+<h1>Shop</h1>
+</header>
+
+<section class="section">
+<div id="shop" class="grid"></div>
+</section>
+
+<section class="section">
+
+<h2>Avis clients ⭐</h2>
+
+<input id="rname" placeholder="Nom">
+<input id="rtext" placeholder="Avis">
+<button class="btn" onclick="addReview()">Envoyer</button>
+
+<div id="reviews"></div>
+
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
