@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>FAQ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">DigitalNova</div>
+<div>
+<a href="index.html">Accueil</a>
+<a href="boutique.html">Boutique</a>
+<a href="faq.html">FAQ</a>
+<a href="support.html">Support</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<h1>FAQ</h1>
+</section>
+
+<div class="container">
+
+<div class="card">
+<h3>Comment je reçois mes produits ?</h3>
+<p>Après achat, un lien de téléchargement est fourni.</p>
+</div>
+
+<div class="card">
+<h3>Est-ce que c’est instantané ?</h3>
+<p>Oui, tout est numérique et immédiat.</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 DigitalNova
+</footer>
+
+</body>
+</html>
