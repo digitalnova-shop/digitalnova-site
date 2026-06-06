@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Support</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">DigitalNova</div>
+<div>
+<a href="index.html">Accueil</a>
+<a href="boutique.html">Boutique</a>
+<a href="faq.html">FAQ</a>
+<a href="support.html">Support</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Support</h1>
+<p>Contact : digital-shop@outlook.com</p>
+</section>
+
+<footer>
+© 2026 DigitalNova
+</footer>
+
+</body>
+</html>
