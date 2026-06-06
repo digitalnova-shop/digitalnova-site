@@ -8,7 +8,6 @@
 
 <style>
 
-/* RESET */
 *{
 margin:0;
 padding:0;
@@ -17,13 +16,13 @@ font-family:Arial, sans-serif;
 }
 
 body{
-background:#0D1117;
+background:#0B0F1A;
 color:white;
 }
 
-/* NAV */
+/* HEADER */
 header{
-background:#111827;
+background:#0F172A;
 padding:15px 20px;
 position:sticky;
 top:0;
@@ -40,27 +39,27 @@ margin:auto;
 }
 
 .logo{
-font-size:24px;
+font-size:22px;
 font-weight:bold;
-color:#00C8FF;
+color:#A855F7;
 }
 
-.menu a{
+nav a{
 color:white;
 text-decoration:none;
 margin-left:15px;
 opacity:0.8;
 }
 
-.menu a:hover{
+nav a:hover{
+color:#A855F7;
 opacity:1;
-color:#00C8FF;
 }
 
 /* HERO */
 .hero{
 text-align:center;
-padding:70px 20px 40px;
+padding:70px 20px;
 }
 
 .hero h1{
@@ -74,116 +73,102 @@ max-width:700px;
 margin:auto;
 }
 
-/* FILTER BAR (réaliste shop) */
-.filters{
-display:flex;
-justify-content:center;
-gap:10px;
-margin:30px 0;
-flex-wrap:wrap;
-}
-
-.filter{
+/* BADGE */
+.badge{
+display:inline-block;
+background:#A855F720;
+color:#A855F7;
 padding:8px 14px;
-border:1px solid #1f2937;
-border-radius:20px;
-cursor:pointer;
-color:#aaa;
+border-radius:999px;
+margin-bottom:15px;
+border:1px solid #A855F7;
 }
 
-.filter:hover{
-border-color:#00C8FF;
-color:#00C8FF;
-}
-
-/* PRODUCTS */
+/* GRID */
 .products{
 max-width:1200px;
 margin:auto;
 padding:20px;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
 /* CARD */
 .card{
 background:#111827;
-border:1px solid #1f2937;
 border-radius:15px;
 overflow:hidden;
+border:1px solid #1f2937;
 transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-6px);
-border-color:#00C8FF;
+border-color:#A855F7;
+box-shadow:0 0 20px #A855F740;
 }
 
-/* IMAGE */
 .card img{
 width:100%;
 height:160px;
 object-fit:cover;
-background:#0b1220;
 }
 
 /* CONTENT */
-.card-content{
+.content{
 padding:15px;
 }
 
-.badge{
-display:inline-block;
-padding:5px 10px;
+.tag{
 font-size:12px;
+padding:5px 10px;
+background:#A855F720;
+color:#A855F7;
 border-radius:999px;
-background:#00C8FF20;
-color:#00C8FF;
+display:inline-block;
 margin-bottom:10px;
 }
 
-.card h3{
+h3{
 margin-bottom:8px;
 }
 
-.card p{
+p{
 font-size:14px;
 color:#aaa;
 margin-bottom:10px;
-line-height:1.4;
 }
 
 .price{
-color:#00E676;
+color:#22C55E;
 font-weight:bold;
 font-size:18px;
 margin-bottom:10px;
 }
 
-/* BUTTON */
 .btn{
 display:block;
 text-align:center;
 padding:10px;
-background:#00E676;
-color:black;
+background:#A855F7;
+color:white;
 text-decoration:none;
 border-radius:10px;
 font-weight:bold;
 }
 
 .btn:hover{
-opacity:0.9;
+background:#9333EA;
 }
 
 /* FOOTER */
 footer{
 text-align:center;
 padding:40px 20px;
-margin-top:60px;
-border-top:1px solid #1f2937;
 color:#777;
+margin-top:50px;
+border-top:1px solid #1f2937;
 }
 
 </style>
@@ -192,107 +177,95 @@ color:#777;
 
 <body>
 
-<!-- NAV -->
 <header>
 <nav>
 <div class="logo">DigitalNova</div>
 
-<div class="menu">
+<div>
 <a href="index.html">Accueil</a>
 <a href="boutique.html">Boutique</a>
 <a href="faq.html">FAQ</a>
 <a href="apropos.html">À propos</a>
-<a href="contact.html">Contact</a>
 </div>
 
 </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-<h1>Notre Boutique</h1>
-<p>Des produits digitaux simples, utiles et prêts à l’emploi pour créateurs et entrepreneurs.</p>
+<div class="badge">🔥 Boutique digitale TikTok Style</div>
+<h1>Produits digitaux pour créer, apprendre et vendre</h1>
+<p>Templates, IA, TikTok, Canva et outils pour développer ton business en ligne.</p>
 </section>
 
-<!-- FILTERS -->
-<div class="filters">
-<div class="filter">Tout</div>
-<div class="filter">TikTok</div>
-<div class="filter">IA</div>
-<div class="filter">Design</div>
-<div class="filter">YouTube</div>
-</div>
-
-<!-- PRODUCTS -->
 <section class="products">
 
-<!-- 1 -->
+<!-- PRODUIT 1 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0">
-<div class="card-content">
-<span class="badge">🔥 Bestseller</span>
+<img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb">
+<div class="content">
+<div class="tag">🔥 Best Seller</div>
 <h3>Pack TikTok Viral</h3>
-<p>100 idées de vidéos + scripts prêts à utiliser pour exploser sur TikTok.</p>
+<p>100 idées + scripts prêts pour exploser sur TikTok.</p>
 <div class="price">14,99€</div>
 <a class="btn" href="#">Acheter</a>
 </div>
 </div>
 
-<!-- 2 -->
+<!-- PRODUIT 2 -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
-<div class="card-content">
-<span class="badge">🚀 Populaire</span>
-<h3>Pack Prompts ChatGPT</h3>
-<p>Prompts IA pour business, contenu, productivité et réseaux sociaux.</p>
+<div class="content">
+<div class="tag">🚀 Populaire</div>
+<h3>Prompts ChatGPT</h3>
+<p>Prompts IA pour business, contenu et productivité.</p>
 <div class="price">19,99€</div>
 <a class="btn" href="#">Acheter</a>
 </div>
 </div>
 
-<!-- 3 -->
+<!-- PRODUIT 3 -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
-<div class="card-content">
-<span class="badge">🤖 IA</span>
+<div class="content">
+<div class="tag">🤖 IA</div>
 <h3>Guide IA Business</h3>
-<p>Apprends à utiliser l’intelligence artificielle pour gagner de l’argent.</p>
+<p>Apprends à gagner de l’argent avec l’intelligence artificielle.</p>
 <div class="price">9,99€</div>
 <a class="btn" href="#">Acheter</a>
 </div>
 </div>
 
-<!-- 4 -->
+<!-- PRODUIT 4 -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71">
-<div class="card-content">
-<span class="badge">🎨 Design</span>
+<div class="content">
+<div class="tag">🎨 Canva</div>
 <h3>Pack Canva Templates</h3>
-<p>Templates prêts pour Instagram, TikTok et YouTube.</p>
+<p>Templates prêts pour réseaux sociaux.</p>
 <div class="price">12,99€</div>
 <a class="btn" href="#">Acheter</a>
 </div>
 </div>
 
-<!-- 5 -->
+<!-- PRODUIT 5 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb">
-<div class="card-content">
-<span class="badge">🎬 Vidéo</span>
-<h3>Pack CapCut Effets</h3>
-<p>Transitions et effets pour rendre tes vidéos virales.</p>
+<img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02">
+<div class="content">
+<div class="tag">🎬 CapCut</div>
+<h3>Effets CapCut Pro</h3>
+<p>Transitions et effets pour vidéos virales.</p>
 <div class="price">11,99€</div>
 <a class="btn" href="#">Acheter</a>
 </div>
 </div>
 
-<!-- 6 -->
+<!-- PRODUIT 6 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02">
-<div class="card-content">
-<span class="badge">📦 YouTube</span>
-<h3>Miniatures YouTube Pro</h3>
-<p>Miniatures conçues pour augmenter tes clics et tes vues.</p>
+<img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0">
+<div class="content">
+<div class="tag">📦 YouTube</div>
+<h3>Miniatures YouTube</h3>
+<p>Miniatures pour augmenter tes vues.</p>
 <div class="price">14,99€</div>
 <a class="btn" href="#">Acheter</a>
 </div>
@@ -300,10 +273,9 @@ color:#777;
 
 </section>
 
-<!-- FOOTER -->
 <footer>
-<p>© 2026 DigitalNova - Tous droits réservés</p>
-<p>Produits digitaux pour créateurs et entrepreneurs</p>
+<p>© 2026 DigitalNova</p>
+<p>Produits digitaux pour créateurs</p>
 </footer>
 
 </body>
