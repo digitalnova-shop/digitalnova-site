@@ -1,0 +1,95 @@
+/* FICHIER : style.css */
+
+body{
+margin:0;
+font-family:Arial;
+background:#0B0F1A;
+color:white;
+}
+
+header{
+background:#0F172A;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+header h1{
+color:#A855F7;
+margin:0;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+opacity:0.8;
+}
+
+nav a:hover{
+color:#A855F7;
+opacity:1;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,#111827,#0B0F1A);
+}
+
+.hero h2{
+font-size:40px;
+color:#A855F7;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111827;
+padding:15px;
+border-radius:12px;
+border:1px solid #1f2937;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#A855F7;
+}
+
+.price{
+color:#22C55E;
+font-weight:bold;
+margin-top:8px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 15px;
+background:#A855F7;
+color:white;
+border-radius:8px;
+text-decoration:none;
+margin-top:10px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+border-top:1px solid #1f2937;
+color:#777;
+margin-top:50px;
+}
