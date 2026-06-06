@@ -3,15 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Boutique - DigitalNova</title>
 
 <style>
 
+/* RESET */
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 }
 
 body{
@@ -19,12 +21,14 @@ background:#0D1117;
 color:white;
 }
 
+/* NAV */
 header{
 background:#111827;
-padding:20px;
+padding:15px 20px;
 position:sticky;
 top:0;
 z-index:100;
+border-bottom:1px solid #1f2937;
 }
 
 nav{
@@ -36,7 +40,7 @@ margin:auto;
 }
 
 .logo{
-font-size:28px;
+font-size:24px;
 font-weight:bold;
 color:#00C8FF;
 }
@@ -44,284 +48,262 @@ color:#00C8FF;
 .menu a{
 color:white;
 text-decoration:none;
-margin-left:20px;
+margin-left:15px;
+opacity:0.8;
 }
 
+.menu a:hover{
+opacity:1;
+color:#00C8FF;
+}
+
+/* HERO */
 .hero{
 text-align:center;
-padding:80px 20px;
-background:linear-gradient(135deg,#111827,#0D1117);
+padding:70px 20px 40px;
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:15px;
+font-size:42px;
+margin-bottom:10px;
 }
 
 .hero p{
-color:#cccccc;
+color:#aaa;
 max-width:700px;
 margin:auto;
 }
 
-.products{
-max-width:1400px;
-margin:auto;
-padding:60px 20px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+/* FILTER BAR (réaliste shop) */
+.filters{
+display:flex;
+justify-content:center;
+gap:10px;
+margin:30px 0;
+flex-wrap:wrap;
 }
 
+.filter{
+padding:8px 14px;
+border:1px solid #1f2937;
+border-radius:20px;
+cursor:pointer;
+color:#aaa;
+}
+
+.filter:hover{
+border-color:#00C8FF;
+color:#00C8FF;
+}
+
+/* PRODUCTS */
+.products{
+max-width:1200px;
+margin:auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+/* CARD */
 .card{
 background:#111827;
-border-radius:18px;
-padding:25px;
-transition:.3s;
 border:1px solid #1f2937;
+border-radius:15px;
+overflow:hidden;
+transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
-box-shadow:0 20px 40px rgba(0,200,255,.15);
+transform:translateY(-6px);
 border-color:#00C8FF;
+}
+
+/* IMAGE */
+.card img{
+width:100%;
+height:160px;
+object-fit:cover;
+background:#0b1220;
+}
+
+/* CONTENT */
+.card-content{
+padding:15px;
 }
 
 .badge{
 display:inline-block;
-background:#00E676;
-color:black;
-padding:6px 12px;
-border-radius:20px;
+padding:5px 10px;
 font-size:12px;
-font-weight:bold;
-margin-bottom:15px;
+border-radius:999px;
+background:#00C8FF20;
+color:#00C8FF;
+margin-bottom:10px;
 }
 
 .card h3{
-margin-bottom:15px;
+margin-bottom:8px;
 }
 
 .card p{
-color:#cccccc;
-line-height:1.5;
+font-size:14px;
+color:#aaa;
+margin-bottom:10px;
+line-height:1.4;
 }
 
 .price{
-font-size:28px;
-font-weight:bold;
 color:#00E676;
-margin-top:20px;
+font-weight:bold;
+font-size:18px;
+margin-bottom:10px;
 }
 
-.old-price{
-text-decoration:line-through;
-color:#888;
-font-size:16px;
-margin-left:10px;
-}
-
+/* BUTTON */
 .btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 20px;
+display:block;
+text-align:center;
+padding:10px;
 background:#00E676;
 color:black;
-font-weight:bold;
 text-decoration:none;
 border-radius:10px;
-transition:.3s;
+font-weight:bold;
 }
 
 .btn:hover{
-transform:scale(1.05);
+opacity:0.9;
 }
 
-.guarantees{
-background:#111827;
-padding:50px 20px;
-text-align:center;
-}
-
-.g-grid{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:30px;
-}
-
-.g-item{
-background:#0D1117;
-padding:20px;
-border-radius:15px;
-width:250px;
-}
-
+/* FOOTER */
 footer{
-margin-top:80px;
-background:#111827;
-padding:40px;
 text-align:center;
-color:#aaa;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:36px;
-}
-
-.menu{
-display:none;
-}
-
+padding:40px 20px;
+margin-top:60px;
+border-top:1px solid #1f2937;
+color:#777;
 }
 
 </style>
+
 </head>
 
 <body>
 
+<!-- NAV -->
 <header>
-
 <nav>
-
 <div class="logo">DigitalNova</div>
 
 <div class="menu">
 <a href="index.html">Accueil</a>
+<a href="boutique.html">Boutique</a>
 <a href="faq.html">FAQ</a>
-<a href="contact.html">Contact</a>
 <a href="apropos.html">À propos</a>
+<a href="contact.html">Contact</a>
 </div>
 
 </nav>
-
 </header>
 
+<!-- HERO -->
 <section class="hero">
-
-<h1>🛍️ Boutique DigitalNova</h1>
-
-<p>
-Découvrez nos ressources numériques premium pour l'IA,
-la création de contenu, TikTok, YouTube et la productivité.
-</p>
-
+<h1>Notre Boutique</h1>
+<p>Des produits digitaux simples, utiles et prêts à l’emploi pour créateurs et entrepreneurs.</p>
 </section>
 
+<!-- FILTERS -->
+<div class="filters">
+<div class="filter">Tout</div>
+<div class="filter">TikTok</div>
+<div class="filter">IA</div>
+<div class="filter">Design</div>
+<div class="filter">YouTube</div>
+</div>
+
+<!-- PRODUCTS -->
 <section class="products">
 
+<!-- 1 -->
 <div class="card">
-<div class="badge">⭐ Best Seller</div>
-<h3>Pack 500 Prompts ChatGPT</h3>
-<p>500 prompts organisés pour le business, les études, les réseaux sociaux et la productivité.</p>
-<div class="price">14,99€ <span class="old-price">29,99€</span></div>
-<a href="#" class="btn">Acheter</a>
-</div>
-
-<div class="card">
-<div class="badge">🔥 Populaire</div>
-<h3>Pack Canva Réseaux Sociaux</h3>
-<p>100 modèles Canva modifiables pour TikTok, Instagram et YouTube.</p>
-<div class="price">19,99€</div>
-<a href="#" class="btn">Acheter</a>
-</div>
-
-<div class="card">
-<div class="badge">🚀 Viral</div>
-<h3>Kit Créateur TikTok</h3>
-<p>Scripts viraux, idées de vidéos et calendrier de publication.</p>
-<div class="price">24,99€</div>
-<a href="#" class="btn">Acheter</a>
-</div>
-
-<div class="card">
-<h3>Pack Miniatures YouTube</h3>
-<p>50 miniatures professionnelles modifiables pour augmenter le taux de clic.</p>
-<div class="price">12,99€</div>
-<a href="#" class="btn">Acheter</a>
-</div>
-
-<div class="card">
-<h3>E-book IA</h3>
-<p>Guide complet pour gagner de l'argent avec les outils d'intelligence artificielle.</p>
-<div class="price">9,99€</div>
-<a href="#" class="btn">Acheter</a>
-</div>
-
-<div class="card">
-<h3>Pack Presets Lightroom</h3>
-<p>30 presets professionnels pour améliorer instantanément vos photos.</p>
+<img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0">
+<div class="card-content">
+<span class="badge">🔥 Bestseller</span>
+<h3>Pack TikTok Viral</h3>
+<p>100 idées de vidéos + scripts prêts à utiliser pour exploser sur TikTok.</p>
 <div class="price">14,99€</div>
-<a href="#" class="btn">Acheter</a>
+<a class="btn" href="#">Acheter</a>
+</div>
 </div>
 
+<!-- 2 -->
 <div class="card">
-<h3>Pack Effets CapCut</h3>
-<p>Transitions et effets prêts à utiliser pour vos montages vidéo.</p>
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+<div class="card-content">
+<span class="badge">🚀 Populaire</span>
+<h3>Pack Prompts ChatGPT</h3>
+<p>Prompts IA pour business, contenu, productivité et réseaux sociaux.</p>
 <div class="price">19,99€</div>
-<a href="#" class="btn">Acheter</a>
+<a class="btn" href="#">Acheter</a>
+</div>
 </div>
 
+<!-- 3 -->
 <div class="card">
-<h3>Pack Icônes Premium</h3>
-<p>Plus de 2 000 icônes professionnelles haute qualité.</p>
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+<div class="card-content">
+<span class="badge">🤖 IA</span>
+<h3>Guide IA Business</h3>
+<p>Apprends à utiliser l’intelligence artificielle pour gagner de l’argent.</p>
 <div class="price">9,99€</div>
-<a href="#" class="btn">Acheter</a>
+<a class="btn" href="#">Acheter</a>
+</div>
 </div>
 
+<!-- 4 -->
 <div class="card">
-<h3>Pack CV Professionnels</h3>
-<p>20 modèles modernes compatibles Word et Canva.</p>
+<img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71">
+<div class="card-content">
+<span class="badge">🎨 Design</span>
+<h3>Pack Canva Templates</h3>
+<p>Templates prêts pour Instagram, TikTok et YouTube.</p>
+<div class="price">12,99€</div>
+<a class="btn" href="#">Acheter</a>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb">
+<div class="card-content">
+<span class="badge">🎬 Vidéo</span>
+<h3>Pack CapCut Effets</h3>
+<p>Transitions et effets pour rendre tes vidéos virales.</p>
 <div class="price">11,99€</div>
-<a href="#" class="btn">Acheter</a>
+<a class="btn" href="#">Acheter</a>
+</div>
 </div>
 
+<!-- 6 -->
 <div class="card">
-<h3>Pack Productivité</h3>
-<p>Templates Notion et outils d'organisation pour travailler efficacement.</p>
-<div class="price">17,99€</div>
-<a href="#" class="btn">Acheter</a>
+<img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02">
+<div class="card-content">
+<span class="badge">📦 YouTube</span>
+<h3>Miniatures YouTube Pro</h3>
+<p>Miniatures conçues pour augmenter tes clics et tes vues.</p>
+<div class="price">14,99€</div>
+<a class="btn" href="#">Acheter</a>
+</div>
 </div>
 
 </section>
 
-<section class="guarantees">
-
-<h2>🛡️ Nos garanties</h2>
-
-<div class="g-grid">
-
-<div class="g-item">
-⚡ Téléchargement instantané
-</div>
-
-<div class="g-item">
-🔒 Paiement sécurisé
-</div>
-
-<div class="g-item">
-♾️ Accès à vie
-</div>
-
-<div class="g-item">
-📧 Support rapide
-</div>
-
-</div>
-
-</section>
-
+<!-- FOOTER -->
 <footer>
-
-DigitalNova © 2026
-
-<br><br>
-
-Paiement sécurisé • Téléchargement instantané • Accès à vie
-
+<p>© 2026 DigitalNova - Tous droits réservés</p>
+<p>Produits digitaux pour créateurs et entrepreneurs</p>
 </footer>
 
 </body>
